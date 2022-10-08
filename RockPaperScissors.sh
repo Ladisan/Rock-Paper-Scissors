@@ -73,15 +73,7 @@ user="$(tr '[:lower:]' '[:upper:]' <<< ${user:0:1})${user:1}"
 # Quit game and displays game score
 if [  $user == "Quit"  ]; then
 
-#	printf "Number  of  played  games: ${CYA}${game}${NC}\n Wins (${GRE}${user_wins}${NC}) Draw (${CYA}${draw_game}${NC}) Lost (${RED}${bot_wins}${NC})" | cowsay
-
-
-#	printf "Number  of  played  games: ${CYA}${game}${NC}\n Wins (${GRE}${user_wins}${NC})      | \n Draw (${CYA}${draw_game}${NC})      | \n Lost (${RED}${bot_wins}${NC})" | cowsay
-
-
 	printf "Number  of  played  games: ${CYA}${game}${NC} \n Wins (${GRE}${user_wins}${NC}) \n Draw (${CYA}${draw_game}${NC}) \n Lost (${RED}${bot_wins}${NC})" | cowsay
-
-
 
 		break
 	fi
